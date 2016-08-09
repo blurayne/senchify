@@ -1,0 +1,118 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "Ext4"
+                        },
+                        "property": {
+                            "type": "Identifier",
+                            "name": "Date"
+                        }
+                    },
+                    "property": {
+                        "type": "Identifier",
+                        "name": "patterns"
+                    }
+                },
+                "right": {
+                    "type": "ObjectExpression",
+                    "properties": [
+                        {
+                            "type": "Property",
+                            "key": {
+                                "type": "Identifier",
+                                "name": "ISO8601Long"
+                            },
+                            "computed": false,
+                            "value": {
+                                "type": "Literal",
+                                "value": "Y-m-d H:i:s",
+                                "raw": "\"Y-m-d H:i:s\""
+                            },
+                            "kind": "init",
+                            "method": false,
+                            "shorthand": false
+                        },
+                        {
+                            "type": "Property",
+                            "key": {
+                                "type": "Identifier",
+                                "name": "ISO8601Short"
+                            },
+                            "computed": false,
+                            "value": {
+                                "type": "Literal",
+                                "value": "Y-m-d",
+                                "raw": "\"Y-m-d\""
+                            },
+                            "kind": "init",
+                            "method": false,
+                            "shorthand": false
+                        },
+                        {
+                            "type": "Property",
+                            "key": {
+                                "type": "Identifier",
+                                "name": "ShortDate"
+                            },
+                            "computed": false,
+                            "value": {
+                                "type": "Literal",
+                                "value": "n/j/Y",
+                                "raw": "\"n/j/Y\""
+                            },
+                            "kind": "init",
+                            "method": false,
+                            "shorthand": false
+                        },
+                        {
+                            "type": "Property",
+                            "key": {
+                                "type": "Identifier",
+                                "name": "LongDate"
+                            },
+                            "computed": false,
+                            "value": {
+                                "type": "Literal",
+                                "value": "l, F d, Y",
+                                "raw": "\"l, F d, Y\""
+                            },
+                            "kind": "init",
+                            "method": false,
+                            "shorthand": false
+                        },
+                        {
+                            "type": "Property",
+                            "key": {
+                                "type": "Identifier",
+                                "name": "FullDateTime"
+                            },
+                            "computed": false,
+                            "value": {
+                                "type": "Literal",
+                                "value": "l, F d, Y g:i:s A",
+                                "raw": "\"l, F d, Y g:i:s A\""
+                            },
+                            "kind": "init",
+                            "method": false,
+                            "shorthand": false
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "sourceType": "script"
+}
