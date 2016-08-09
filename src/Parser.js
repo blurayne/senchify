@@ -3,7 +3,7 @@ import parser from 'esprima';
 import t from 'esprima-ast-utils';
 import o from "object-path";
 
-var $g = o.get;
+const $g = o.get;
 
 
 export default class Parser {
@@ -14,7 +14,7 @@ export default class Parser {
     }
 
     parse(filename) {
-        let code = fs.readFileSync(filename, 'utf8');
+        const code = fs.readFileSync(filename, 'utf8');
         this.ast = parser.parse(code);
         this.findDependencies();
     }

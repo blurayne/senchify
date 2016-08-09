@@ -3,11 +3,10 @@ import parser from 'esprima';
 import glob from "glob";
 
 glob.sync('./spec/resources/*.js').forEach((filePath) => {
-
-    process.stdout.write('-› ' + filePath + '...');
-    var code = fs.readFileSync(filePath, 'utf8');
-    var ast = parser.parse(code);
-    var pretty = JSON.stringify(ast, null, 4);
+    process.stdout.write('-› ' + filePath + '…');
+    const code = fs.readFileSync(filePath, 'utf8');
+    const ast = parser.parse(code);
+    const pretty = JSON.stringify(ast, null, 4);
     fs.writeFileSync(
         filePath + '.ast',
         pretty,
