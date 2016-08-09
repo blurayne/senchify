@@ -68,7 +68,7 @@ $ sudo npm install -g jasmine-es6
  
 Install Babel
 ```bash
-$ sudo npm uninstall -g babel`
+$ sudo npm uninstall -g babel
 $ sudo npm install -g babel-cli babel-core
 ```
  
