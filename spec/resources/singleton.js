@@ -1,9 +1,9 @@
-Ext.define("IA.Operator", {
+Ext.define("Sencha.Operator", {
     singleton: true,
 
 });
 
-Ext.define("IA.", {
+Ext.define("Sencha.", {
     singleton: true,
 
 });

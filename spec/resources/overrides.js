@@ -1,25 +1,25 @@
 // Multiple defintions within one file
 
 
-
-
 var globalObj = {};
 
-globalObj.
+globalObj.objectMap = {
+    'key': 'value'
+};
 
 Ext4.override(Ext4.form.Panel, {
     paramsAsHash: true
 });
 
-Ext4.define("IA.Overrides", {
+Ext4.define("Sencha.Overrides", {
     applied: true
 });
 
 Ext.apply(Ext.EventManager, {
 });
 
-Ext.define("IA.Application", {
+Ext.define("Sencha.Application", {
     requires: [
-        "IA.nodechooser.AccountManager"
+        "Sencha.MyStuff"
     ]
 });
