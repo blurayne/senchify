@@ -2,6 +2,7 @@
   "name": "Senchify",
   "description": "Anaylse Sencha/Ext.js files for dependencies using esprima",
   "homepage": "https://github.com/sebarth/gulp-extify",
+  "version": "0.0.1",
   "author": {
     "name": "Markus Geiger",
     "email": "mg@evolution515.net"
@@ -19,11 +20,12 @@
     "extjs",
     "dependencies"
   ],
-  "version": "0.0.1",
   "scripts": {
     "dev": "babel-node src/test.js",
     "generate-fixture-ast": "babel-node generate-fixture-ast.js",
-    "tests": "jasmine"
+    "test": "jasmine",
+    "reset": "rm -fr node_modules && npm install",
+    "gulp": "$(npm bin)/gulp"
   },
   "dependencies": {
     "esprima": "^2.7.2",
@@ -32,13 +34,12 @@
     "topo-sort": "^1.0.0"
   },
   "devDependencies": {
-    "babel-preset-es2015": "^6.13.2",
-    "babel-register": "^6.11.6",
     "eslint": "^3.2.2",
     "glob": "^7.0.5",
-    "jasmine": "^2.4.1",
-    "jasmine-es6": "^0.2.1",
-    "object-path": "^0.11.1",
-    "pug": "^2.0.0-beta4"
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-uglify": "^2.0.0",
+    "jasmine-es6": "^0.2.1"
   }
 }
