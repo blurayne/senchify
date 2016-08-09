@@ -10,7 +10,7 @@ What should be possible – example:
 Senchify.parseBasePackage('<Ext.JS source directory>')
 Senchify.parseBasePackage('<Custom framework source directory>')
 Senchify.parsePackage('<Your module based content>')
-Senchify.getPackageFileOrder() // to used with gulp streams
+Senchify.getPackageFileOrder() // to be used with gulp streams
 ```
  
 
@@ -56,7 +56,7 @@ $(npm bin)/gulp
 
 Uninstall non-ES6 jasmine (if installed)
 ```bash
-$ sudo npm uninstall -g jasmine # Uninstall`
+$ sudo npm uninstall -g jasmine 
 ```
  
 Install ES6 Jasmine
